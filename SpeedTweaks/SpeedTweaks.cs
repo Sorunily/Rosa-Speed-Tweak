@@ -17,7 +17,6 @@ public class SpeedTweaks : BaseUnityPlugin
         Logger.LogInfo($"SpeedTweaks loaded. Slow={SlowMultiplier.Value}");
     }
 
-    // Patch GameplayManager.SetSpeed(GameSpeed) without referencing game DLLs
     [HarmonyPatch]
     class SetSpeedPatch
     {
@@ -41,7 +40,6 @@ internal static class SpeedState
     public static bool IsSlow;
 }
 
-// Your existing SetSpeed patch — just update the Postfix to record Slow:
 [HarmonyPatch]
 class SetSpeedPatch
 {
@@ -60,7 +58,6 @@ class SetSpeedPatch
     }
 }
 
-// NEW: clamp any later writes to timeScale while Slow is active
 [HarmonyPatch(typeof(Time), nameof(Time.timeScale), MethodType.Setter)]
 static class TimeScaleSetterPatch
 {
@@ -70,4 +67,5 @@ static class TimeScaleSetterPatch
         if (SpeedState.IsSlow && value > 0f)
             value = SpeedTweaks.SlowMultiplier.Value;
     }
+
 }
