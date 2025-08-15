@@ -1,5 +1,5 @@
 # Rosa's-Speed-Tweak
-This mod makes it so the slowest speed is a bit slower. Exact speed can be changed in the config
+This OU2 mod makes it so the slowest speed is a bit slower. Exact speed can be changed in the config.
 
 ## Requirements
 - BepInEx 5 x64 (Mono). Download from the official BepInEx releases. https://github.com/bepinex/bepinex/releases
