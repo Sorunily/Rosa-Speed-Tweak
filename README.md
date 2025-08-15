@@ -5,11 +5,10 @@ This mod makes it so the slowest speed is a bit slower. Exact speed can be chang
 - BepInEx 5 x64 (Mono). Download from the official BepInEx releases. https://github.com/bepinex/bepinex/releases
 
 ## Install
-1. Extract the game’s BepInEx zip into the game folder (next to the exe). Run the game once.
+1. Extract the BepInEx zip into the game folder (next to the exe). Run the game once.
 2. Extract **this mod’s zip** into the **same game folder** so that:
    - BepInEx/plugins/SpeedTweaks/SpeedTweaks.dll exists
-   - (optional) BepInEx/config/rosa.ou2.speedtweaks.cfg exists
-3. Run the game. Check `BepInEx/LogOutput.log` for “OU2 Speed Tweaks loaded…”.
+3. Run the game. Check `BepInEx/LogOutput.log` for “OU2 Speed Tweaks loaded…”. After the first launch with the plugin installed you can find the created config in BepInEx/config/rosa.ou2.speedtweaks.cfg if you want to change the speed value. Vanilla value is 1. Default for the mod is 0.25.
 
 ## Configure
 Edit `BepInEx/config/rosa.ou2.speedtweaks.cfg`:
