@@ -1,4 +1,4 @@
-# Rosa's-Speed-Tweak
+# OU2 Speed-Tweak
 This OU2 mod makes it so the slowest speed is a bit slower. Exact speed can be changed in the config.
 
 ## Requirements
