@@ -5,7 +5,7 @@ using UnityEngine;
 using System;
 using System.Reflection;
 
-[BepInPlugin("rosa.ou2.speedtweaks", "OU2 Speed Tweaks", "1.0.0")]
+[BepInPlugin("ou2.speedtweaks", "OU2 Speed Tweaks", "1.0.0")]
 public class SpeedTweaks : BaseUnityPlugin
 {
     public static ConfigEntry<float> SlowMultiplier;
@@ -13,7 +13,7 @@ public class SpeedTweaks : BaseUnityPlugin
     private void Awake()
     {
         SlowMultiplier = Config.Bind("Speeds", "Slow", 0.5f, "Time scale when Slow is selected");
-        new Harmony("rosa.ou2.speedtweaks").PatchAll(typeof(SpeedTweaks).Assembly);
+        new Harmony("ou2.speedtweaks").PatchAll(typeof(SpeedTweaks).Assembly);
         Logger.LogInfo($"SpeedTweaks loaded. Slow={SlowMultiplier.Value}");
     }
 
