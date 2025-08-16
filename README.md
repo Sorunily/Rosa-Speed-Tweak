@@ -11,4 +11,4 @@ This OU2 mod makes it so the slowest speed is a bit slower. Exact speed can be c
 3. Run the game. Check `BepInEx/LogOutput.log` for “OU2 Speed Tweaks loaded…”. After the first launch with the plugin installed you can find the created config in BepInEx/config/rosa.ou2.speedtweaks.cfg if you want to change the speed value. Vanilla value is 1. Default for the mod is 0.5.
 
 ## Configure
-Edit `BepInEx/config/rosa.ou2.speedtweaks.cfg`:
+Edit `BepInEx/config/ou2.speedtweaks.cfg`:
